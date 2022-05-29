@@ -22,7 +22,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 /**
- * Controller to calculate AOW date for pension
+ * Controller to calculate lease rate for car lease
  *
  * @author Saunak
  */
