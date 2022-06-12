@@ -1,6 +1,6 @@
 package com.assignment.car.lease.util;
 
-public class PensionAgeCalcTestConstants {
+public class CarLeaseTestConstants {
 
     public static final String invalidCustomerInput = "01-01-2001";
 

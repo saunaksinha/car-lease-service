@@ -5,10 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CarLeaseApplication {
-
-    public static void main(String[] args) {
-
-        SpringApplication.run(CarLeaseApplication.class, args);
-    }
-
+  public static void main(String[] args) {
+    SpringApplication.run(CarLeaseApplication.class, args);
+  }
 }

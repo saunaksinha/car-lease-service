@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad5e5e11-71f8-4368-b48f-85c58efdc920" name="Changes" comment="" />
+    <list default="true" id="ad5e5e11-71f8-4368-b48f-85c58efdc920" name="Changes" comment="gitignore update">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/UserInfoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/ERole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/ICarRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/ICustomerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/services/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/services/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car-lease-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/car-lease-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/CarLeaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/CarLeaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/PensionResultDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/PensionRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/PensionRuleSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/config/RuleConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CarLeaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CarLeaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/CarLeaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/CarLeaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/impl/CarLeaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/impl/CarLeaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__LOAD_DATABASE_V1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__LOAD_DATABASE_V1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/CarLeaseApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/CarLeaseApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/controller/CarLeaseControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/controller/CarLeaseControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/util/PensionAgeCalcTestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/util/CarLeaseTestConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__LOAD_DATABASE_V1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__LOAD_DATABASE_V1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +67,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,20 +88,32 @@
     </option>
   </component>
   <component name="ProjectId" id="29IirYUMQl5u7mqVcy0HXXdLteC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/saunaksinha/Documents/Learning/car-lease-service/src/main/resources",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/saunaksinha/Documents/Learn/car-lease-service",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "google-java-format.settings",
+    "spring.configuration.checksum": "bc382abe1ec81ff07128495d1c458ea7"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/java/com/assignment/pension" />
@@ -51,10 +122,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.assignment.car.lease.entity" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.assignment.car.lease.entity" />
+      <recent name="com.assignment.car.lease.repository" />
+      <recent name="com.assignment.car.lease.controller" />
       <recent name="com.assignment.car.lease.bean" />
       <recent name="com.assignment.pension.bean" />
-      <recent name="com.assignment.pension.service" />
     </key>
   </component>
   <component name="RunManager" selected="Application.CarLeaseApplication">
@@ -71,72 +147,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarLeaseControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="car-lease-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.pension.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.pension.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.pension.controller.CarLeaseControllerTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarLeaseControllerTests.testSuccessFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="car-lease-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.pension.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.pension.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.pension.controller.CarLeaseControllerTests" />
-      <option name="METHOD_NAME" value="testSuccessFlow" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarLeaseControllerTests.whenCustomerDateOfBirthIsInvalidFormatThenReturnError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="car-lease-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.pension.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.pension.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.pension.controller.CarLeaseControllerTests" />
-      <option name="METHOD_NAME" value="whenCustomerDateOfBirthIsInvalidFormatThenReturnError" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarLeaseControllerTests.whenCustomerDateOfBirthIsValidFormatThenReturnSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="car-lease-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.pension.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.pension.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.pension.controller.CarLeaseControllerTests" />
-      <option name="METHOD_NAME" value="whenCustomerDateOfBirthIsValidFormatThenReturnSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test" type="JUnit" factoryName="JUnit">
       <module name="car-lease-service" />
-      <option name="PACKAGE_NAME" value="com.assignment.pension" />
+      <option name="PACKAGE_NAME" value="com.assignment.car" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -157,21 +170,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarLeaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="car-lease-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.assignment.car.lease.CarLeaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.car-lease-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="car-lease-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.jdk-11: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="jdk-11" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.CarLeaseApplication" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.car-lease-service: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.jdk-11: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JUnit.test" />
-      <item itemvalue="JUnit.CarLeaseControllerTests" />
-      <item itemvalue="JUnit.CarLeaseControllerTests.testSuccessFlow" />
-      <item itemvalue="JUnit.CarLeaseControllerTests.whenCustomerDateOfBirthIsInvalidFormatThenReturnError" />
-      <item itemvalue="JUnit.CarLeaseControllerTests.whenCustomerDateOfBirthIsValidFormatThenReturnSuccess" />
+      <item itemvalue="Spring Boot.CarLeaseApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CarLeaseApplication" />
-        <item itemvalue="JUnit.CarLeaseControllerTests.whenCustomerDateOfBirthIsValidFormatThenReturnSuccess" />
-        <item itemvalue="JUnit.CarLeaseControllerTests" />
-        <item itemvalue="JUnit.CarLeaseControllerTests.whenCustomerDateOfBirthIsInvalidFormatThenReturnError" />
-        <item itemvalue="JUnit.CarLeaseControllerTests.testSuccessFlow" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.car-lease-service: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yml.jdk-11: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -183,12 +246,69 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652807205998</updated>
+      <workItem from="1653989585126" duration="1103000" />
+      <workItem from="1654023986799" duration="5585000" />
+      <workItem from="1654461612826" duration="1384000" />
+      <workItem from="1654510442855" duration="1426000" />
+      <workItem from="1654512074353" duration="28227000" />
     </task>
+    <task id="LOCAL-00001" summary="gitignore update">
+      <created>1654895491439</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654895491439</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
     <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gitignore update" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/AuthTokenFilter.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/WebSecurityConfig.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/services/UserDetailsServiceImpl.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/AuthEntryPointJwt.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pension_age_calc$PensionControllerTests_whenCustomerDateOfBirthIsInvalidFormatThenReturnError.ic" NAME="PensionControllerTests.whenCustomerDateOfBirthIsInvalidFormatThenReturnError Coverage Results" MODIFIED="1652866163855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
