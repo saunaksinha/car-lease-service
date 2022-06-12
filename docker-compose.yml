@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  car-lease-service:
+    container_name: car-lease-service
+    build:
+      context: car-lease-service
+      dockerfile: Dockerfile
+    image: car-lease-service:latest
+    expose:
+      - 9090
+    ports:
+      - "9090:9090"
+    networks:
+      - spring-cloud-network
+
+networks:
+  spring-cloud-network:
+    driver: bridge

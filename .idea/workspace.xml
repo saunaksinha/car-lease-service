@@ -5,59 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5e5e11-71f8-4368-b48f-85c58efdc920" name="Changes" comment="gitignore update">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/MessageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/SignupRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/UserInfoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/Customer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/ERole.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/Role.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/ICarRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/ICustomerRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/AuthTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/jwt/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/services/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/security/services/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car-lease-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/car-lease-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/CarLeaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/CarLeaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/PensionResultDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/PensionRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/bean/PensionRuleSet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/config/RuleConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CarLeaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/controller/CarLeaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/CarLeaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/CarLeaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/impl/CarLeaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/car/lease/service/impl/CarLeaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__LOAD_DATABASE_V1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__LOAD_DATABASE_V1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/CarLeaseApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/CarLeaseApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/controller/CarLeaseControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/controller/CarLeaseControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/util/PensionAgeCalcTestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/car/lease/util/CarLeaseTestConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__LOAD_DATABASE_V1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__LOAD_DATABASE_V1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +205,7 @@
       <workItem from="1654023986799" duration="5585000" />
       <workItem from="1654461612826" duration="1384000" />
       <workItem from="1654510442855" duration="1426000" />
-      <workItem from="1654512074353" duration="28227000" />
+      <workItem from="1654512074353" duration="28935000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore update">
       <created>1654895491439</created>
@@ -259,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654895491439</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gitignore update">
+      <created>1655017360639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655017360640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
