@@ -42,18 +42,31 @@ there is also an API to calculate lease rate.**
     Request Payload: 
     {
         "id": 9,
-        "name": "test9",
-        "street": "STREET 1",
-        "houseNumber": "HOUSE 1",
-        "zipCode": "ZIP1",
-        "place": "PLACE1",
-        "emailAddress": "TEST1@EMAIL.COM",
+        "name": "CUSTOMER 9",
+        "street": "STREET 9",
+        "houseNumber": "HOUSE 9",
+        "zipCode": "ZIP9",
+        "place": "PLACE9",
+        "emailAddress": "TEST9@EMAIL.COM",
         "phoneNumber": "1234567891",
         "createdAt": "2022-06-14T22:00:00.000+00:00",
         "updatedAt": null
     }
     GET /customers/{customerId} - To get a particular customer
     PUT /customers/{customerId} - Update a customer
+    Request Payload: 
+    {
+        "id": 9,
+        "name": "CUSTOMER 9 updated",
+        "street": "STREET 9",
+        "houseNumber": "HOUSE 9",
+        "zipCode": "ZIP9",
+        "place": "PLACE9",
+        "emailAddress": "TEST9@EMAIL.COM",
+        "phoneNumber": "1234567891",
+        "createdAt": "2022-06-14T22:00:00.000+00:00",
+        "updatedAt": null
+    }
     DELETE /customers/{customersId} - Delete a customer
 
     POST /calc-lease-rate - 

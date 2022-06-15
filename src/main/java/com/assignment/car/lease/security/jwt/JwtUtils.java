@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 /**
- * This class supports functionality of Generating, Validation JWT cookie.
+ * This class supports functionality of Generating, Validation JWT cookie
  */
 @Component
 @Slf4j

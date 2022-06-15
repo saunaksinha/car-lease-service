@@ -3,7 +3,6 @@ package com.assignment.car.lease.security.jwt;
 import com.assignment.car.lease.security.services.UserDetailsServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * makes single execution for each request to our API. doFilterInternal method is overridden to implement parsing & validating the JWT token,
+ * OncePerRequestFilter makes single execution for each request to our API. doFilterInternal method is overridden to implement parsing & validating the JWT token,
  * loading user details (UserDetailsService) & checking authorization (UsernamePasswordAuthenticationToken).
  */
 @Slf4j

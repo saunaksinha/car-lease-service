@@ -89,7 +89,6 @@ public class CustomerController {
 
   /**
    * To update an existing customer
-   *
    * @param customer
    * @return
    */
@@ -115,7 +114,6 @@ public class CustomerController {
    */
   @DeleteMapping(
       value = "/customers/{customerId}",
-      consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
   @PreAuthorize("hasRole('ADMIN')")
   public ResponseEntity<com.assignment.car.lease.entity.Customer> deleteCustomer(@PathVariable Long customerId) {

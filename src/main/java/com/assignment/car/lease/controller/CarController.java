@@ -112,7 +112,6 @@ public class CarController {
    */
   @DeleteMapping(
       value = "/cars/{carId}",
-      consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<Car> deleteCustomer(@PathVariable Long carId) {
     try {
