@@ -43,22 +43,24 @@ public class CarLeaseController {
     @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     public ResponseEntity<LeaseResponse> calcLeaseRate(@RequestBody LeaseRequest leaseRequest) {
         log.info("param1 -> {}", (leaseRequest.getMileage()
-                .divide(BigDecimal.valueOf(12), 2, RoundingMode.FLOOR)
-                .divide(leaseRequest.getNetPrice(), 2, RoundingMode.FLOOR)));
+                .divide(BigDecimal.valueOf(12), 2, RoundingMode.CEILING)
+                .multiply(BigDecimal.valueOf(leaseRequest.getDuration()))
+                .divide(leaseRequest.getNetPrice(), 2, RoundingMode.CEILING)));
 
         log.info("param2 -> {}", leaseRequest.getInterestRate()
-                .divide(BigDecimal.valueOf(100), 2, RoundingMode.FLOOR)
+                .divide(BigDecimal.valueOf(100), 2, RoundingMode.CEILING)
                 .multiply(leaseRequest.getNetPrice())
-                .divide(BigDecimal.valueOf(12), 2, RoundingMode.FLOOR));
+                .divide(BigDecimal.valueOf(12), 2, RoundingMode.CEILING));
 
         BigDecimal leaseRate =
                 (leaseRequest.getMileage()
-                        .divide(BigDecimal.valueOf(12), 2, RoundingMode.FLOOR)
-                        .divide(leaseRequest.getNetPrice(), 2, RoundingMode.FLOOR))
+                        .divide(BigDecimal.valueOf(12), 2, RoundingMode.CEILING)
+                        .multiply(BigDecimal.valueOf(leaseRequest.getDuration()))
+                        .divide(leaseRequest.getNetPrice(), 2, RoundingMode.CEILING))
                         .add((leaseRequest.getInterestRate()
-                                .divide(BigDecimal.valueOf(100), 2, RoundingMode.FLOOR)
+                                .divide(BigDecimal.valueOf(100), 2, RoundingMode.CEILING)
                                 .multiply(leaseRequest.getNetPrice()))
-                                .divide(BigDecimal.valueOf(12), 2, RoundingMode.FLOOR));
+                                .divide(BigDecimal.valueOf(12), 2, RoundingMode.CEILING));
         LeaseResponse leaseResponse = LeaseResponse.builder().leaseRate(leaseRate).build();
 
         return new ResponseEntity<>(leaseResponse, HttpStatus.OK);
