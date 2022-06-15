@@ -9,6 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,10 +32,16 @@ public class CarLeaseController {
     @Autowired
     CarLeaseService carLeaseService;
 
+    /**
+     * Method to calculate car lease cost
+     * @param leaseRequest
+     * @return
+     */
     @PostMapping(value = "/calc-lease-rate",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> calcLeaseRate(@RequestBody LeaseRequest leaseRequest) {
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    public ResponseEntity<LeaseResponse> calcLeaseRate(@RequestBody LeaseRequest leaseRequest) {
         log.info("param1 -> {}", (leaseRequest.getMileage()
                 .divide(BigDecimal.valueOf(12), 2, RoundingMode.FLOOR)
                 .divide(leaseRequest.getNetPrice(), 2, RoundingMode.FLOOR)));

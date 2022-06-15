@@ -37,11 +37,16 @@ public class CarController {
 
   @Autowired ICarRepo carRepo;
 
+  /**
+   * To create a car
+   * @param car
+   * @return
+   */
   @PostMapping(
       value = "/cars",
       consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<?> createCar(@RequestBody Car car) {
+  public ResponseEntity<Car> createCar(@RequestBody Car car) {
     try {
       return new ResponseEntity<>(carRepo.save(car), HttpStatus.CREATED);
     } catch (Exception e) {
@@ -49,9 +54,14 @@ public class CarController {
     }
   }
 
+  /**
+   * To get all cars
+   *
+   * @return
+   */
   @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
   @GetMapping(value = "/cars", produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<?> getAllCars() {
+  public ResponseEntity<List<Car>> getAllCars() {
     List<Car> list = carRepo.findAll();
 
     if (list.isEmpty()) {
@@ -61,8 +71,14 @@ public class CarController {
     return new ResponseEntity<>(list, HttpStatus.OK);
   }
 
+  /**
+   * To get a particular car
+   *
+   * @param carId
+   * @return
+   */
   @GetMapping(value = "/cars/{carId}", produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<?> getCustomer(@PathVariable Long carId) {
+  public ResponseEntity<Car> getCar(@PathVariable Long carId) {
     Optional<Car> car = carRepo.findById(carId);
     if (car.isPresent()) {
       return new ResponseEntity<>(car.get(), HttpStatus.OK);
@@ -70,11 +86,17 @@ public class CarController {
     return new ResponseEntity<>(HttpStatus.NOT_FOUND);
   }
 
+  /**
+   * To update an existing car
+   *
+   * @param car
+   * @return
+   */
   @PutMapping(
       value = "/cars/{carId}",
       consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<?> updateCustomer(@RequestBody Car car) {
+  public ResponseEntity<Car> updateCar(@RequestBody Car car) {
     try {
       return new ResponseEntity<>(carRepo.save(car), HttpStatus.OK);
     } catch (Exception e) {
@@ -82,11 +104,17 @@ public class CarController {
     }
   }
 
+  /**
+   * To delete a car
+   *
+   * @param carId
+   * @return
+   */
   @DeleteMapping(
       value = "/cars/{carId}",
       consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<?> deleteCustomer(@PathVariable Long carId) {
+  public ResponseEntity<Car> deleteCustomer(@PathVariable Long carId) {
     try {
       Optional<Car> car = carRepo.findById(carId);
       car.ifPresent(c -> carRepo.delete(c));

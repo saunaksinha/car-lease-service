@@ -9,4 +9,6 @@ public class CarLeaseTestConstants {
             "}";
 
     public static final String emptyCustomerInput = "{}";
+
+    public static final String goodCustomerGetResponse = "{}";
 }

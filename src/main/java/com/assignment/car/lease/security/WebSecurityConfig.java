@@ -17,11 +17,13 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+/**
+ * WebSecurityConfigurerAdapter is the heart of our spring security implementation. It provides HttpSecurity configurations to configure cors,
+ * csrf, session management,rules for protected resources. We have extended WebSecurityConfigurerAdapter to customize default configurations.
+ */
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
-        // securedEnabled = true,
-        // jsr250Enabled = true,
         prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
@@ -51,8 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors().and().csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                //.authorizeRequests().antMatchers("/").permitAll().and()
-                //.authorizeRequests().antMatchers("/h2-console/**").permitAll().and()
+                // Authcontroller handles signup/login requests hence unprotected & kept h2-console also unprotected to access the dataabse.
                 .authorizeRequests().antMatchers("/api/auth/**", "/h2-console/**").permitAll()
                 .antMatchers("/api/test/**", "/api/car-lease/**").permitAll()
                 .anyRequest().authenticated();

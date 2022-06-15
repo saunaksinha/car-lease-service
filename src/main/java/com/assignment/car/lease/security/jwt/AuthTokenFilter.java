@@ -3,6 +3,7 @@ package com.assignment.car.lease.security.jwt;
 import com.assignment.car.lease.security.services.UserDetailsServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,6 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * makes single execution for each request to our API. doFilterInternal method is overridden to implement parsing & validating the JWT token,
+ * loading user details (UserDetailsService) & checking authorization (UsernamePasswordAuthenticationToken).
+ */
 @Slf4j
 public class AuthTokenFilter extends OncePerRequestFilter {
     @Autowired
@@ -34,7 +39,12 @@ public class AuthTokenFilter extends OncePerRequestFilter {
                         new UsernamePasswordAuthenticationToken(userDetails,
                                 null,
                                 userDetails.getAuthorities());
+                //UsernamePasswordAuthenticationToken gets {username, password} from login Request,
+                //AuthenticationManager will use it to authenticate a login account.
 
+                //AuthenticationManager has a DaoAuthenticationProvider (with help of UserDetailsService & PasswordEncoder),
+                // to validate UsernamePasswordAuthenticationToken object.
+                // If successful, AuthenticationManager returns a fully populated Authentication object (including granted authorities).
                 authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }
