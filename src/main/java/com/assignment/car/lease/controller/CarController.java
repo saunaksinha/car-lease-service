@@ -56,7 +56,6 @@ public class CarController {
 
   /**
    * To get all cars
-   *
    * @return
    */
   @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
@@ -73,7 +72,6 @@ public class CarController {
 
   /**
    * To get a particular car
-   *
    * @param carId
    * @return
    */
@@ -88,7 +86,6 @@ public class CarController {
 
   /**
    * To update an existing car
-   *
    * @param car
    * @return
    */
@@ -106,7 +103,6 @@ public class CarController {
 
   /**
    * To delete a car
-   *
    * @param carId
    * @return
    */

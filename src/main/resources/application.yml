@@ -31,7 +31,7 @@ carlease:
 
 logging:
   level:
-    root: ERROR
+    root: INFO
     org.springframework.security: DEBUG
     com.assignment.car: DEBUG
 #  pattern:

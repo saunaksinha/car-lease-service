@@ -1,7 +1,6 @@
 package com.assignment.car.lease.entity;
 
 import lombok.Data;
-import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -16,7 +15,6 @@ import java.util.Date;
 
 @Entity
 @Table(name = "CUSTOMER", schema = "LEASE")
-@ToString
 @Data
 public class Customer {
 

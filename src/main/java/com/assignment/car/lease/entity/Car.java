@@ -1,7 +1,6 @@
 package com.assignment.car.lease.entity;
 
 import lombok.Data;
-import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,7 +17,6 @@ import java.math.BigDecimal;
  */
 @Entity
 @Table(name = "CAR", schema = "LEASE")
-@ToString
 @Data
 public class Car {
 
